@@ -865,3 +865,112 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
   .hero-copy h1 { font-size: clamp(2.45rem, 10vw, 3.6rem); }
   .hero-visual img { object-position: 56% 48%; }
 }
+
+
+/* Hero full width: foto como fondo, texto y CTA en primer plano */
+.hero--fullbleed { padding-top: 0; }
+.hero--fullbleed .hero-card {
+  width: 100%;
+  min-height: clamp(39rem, calc(100svh - 5.5rem), 56rem);
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  overflow: hidden;
+  border-radius: 0;
+  color: var(--white);
+  background: var(--forest-deep);
+  box-shadow: none;
+  isolation: isolate;
+}
+.hero--fullbleed .hero-visual {
+  min-height: 0;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  background: none;
+  height: auto;
+  aspect-ratio: auto;
+}
+.hero--fullbleed .hero-visual::after {
+  width: auto;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 24, 22, .76) 0%, rgba(10, 24, 22, .52) 31%, rgba(10, 24, 22, .16) 66%, rgba(10, 24, 22, .04) 100%), linear-gradient(0deg, rgba(10, 24, 22, .32) 0%, transparent 43%);
+}
+.hero--fullbleed .hero-visual img { object-position: left center; }
+.hero--fullbleed .hero-copy.container {
+  width: min(var(--page-width), calc(100% - var(--gutter) * 2));
+  position: relative;
+  z-index: 1;
+  align-self: end;
+  margin-inline: auto;
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+}
+.hero--fullbleed .hero-copy h1 {
+  max-width: 14ch;
+  font-size: clamp(3rem, 6vw, 5rem);
+  text-shadow: 0 2px 24px rgba(0, 0, 0, .14);
+}
+.hero--fullbleed .hero-lead {
+  max-width: 45ch;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, .94);
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  line-height: 1.7;
+  text-shadow: 0 1px 16px rgba(0, 0, 0, .22);
+}
+.hero--fullbleed .hero-actions {
+  gap: 1rem;
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+}
+.hero--fullbleed .hero-actions .button {
+  min-width: 12rem;
+  min-height: 3.5rem;
+  width: auto;
+  padding: .9rem 1.35rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .075em;
+  text-decoration: none;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+}
+.hero--fullbleed .hero-actions .button--hero-primary {
+  color: var(--forest-deep);
+  border-color: var(--white);
+  background: var(--white);
+}
+.hero--fullbleed .hero-actions .button--hero-primary:hover {
+  color: var(--forest-deep);
+  border-color: var(--mint);
+  background: var(--mint);
+}
+.hero--fullbleed .hero-actions .button--hero-outline {
+  color: var(--mint);
+  border-color: var(--mint);
+  background: transparent;
+}
+.hero--fullbleed .hero-actions .button--hero-outline:hover {
+  color: var(--forest-deep);
+  border-color: var(--mint);
+  background: var(--mint);
+}
+.hero--fullbleed .hero-actions .button:hover { transform: translateY(-2px); }
+
+@media (max-width: 900px) {
+  .hero--fullbleed .hero-card { min-height: clamp(38rem, calc(100svh - 5rem), 50rem); }
+  .hero--fullbleed .hero-visual img { object-position: 35% center; }
+  .hero--fullbleed .hero-copy h1 { max-width: 13ch; font-size: clamp(2.85rem, 6.5vw, 4.7rem); }
+}
+
+@media (max-width: 700px) {
+  .hero--fullbleed .hero-card { min-height: clamp(39rem, calc(100svh - 4.5rem), 48rem); }
+  .hero--fullbleed .hero-visual::after { background: linear-gradient(0deg, rgba(10, 24, 22, .9) 0%, rgba(10, 24, 22, .65) 36%, rgba(10, 24, 22, .2) 68%, rgba(10, 24, 22, .12) 100%); }
+  .hero--fullbleed .hero-visual img { top: -5.5rem; bottom: auto; height: calc(100% + 5.5rem); object-position: 52% center; }
+  .hero--fullbleed .hero-copy.container { padding-block: 1.4rem 1.5rem; }
+  .hero--fullbleed .hero-copy h1 { max-width: 13ch; font-size: clamp(2.15rem, 8.5vw, 3.2rem); }
+  .hero--fullbleed .hero-lead { max-width: 35ch; margin-top: .65rem; font-size: .9rem; }
+  .hero--fullbleed .hero-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; margin-top: 1.1rem; }
+  .hero--fullbleed .hero-actions .button { min-width: 0; min-height: 3.25rem; width: 100%; padding-inline: .45rem; font-size: clamp(.64rem, 3vw, .72rem); letter-spacing: .045em; }
+}
