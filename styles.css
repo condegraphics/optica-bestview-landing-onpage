@@ -116,6 +116,11 @@ summary { -webkit-tap-highlight-color: transparent; }
   text-decoration: none;
   transition: color .18s ease;
 }
+.desktop-nav a {
+  font-weight: 300;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
 .desktop-nav a:hover,
 .social-links a:hover { color: var(--dark-navy); }
 .header-cta { justify-self: end; }
@@ -140,7 +145,7 @@ h3 {
   margin: 0;
   font-family: var(--display);
   font-weight: 200;
-  letter-spacing: -.045em;
+  letter-spacing: .012em;
   line-height: 1.04;
   text-wrap: balance;
 }
@@ -599,7 +604,9 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
     cursor: pointer;
     font-size: .8rem;
     font-weight: 700;
+    letter-spacing: .08em;
     list-style: none;
+    text-transform: uppercase;
   }
   .mobile-menu summary::-webkit-details-marker { display: none; }
   .mobile-menu summary::before {
@@ -629,7 +636,10 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
     border-radius: .55rem;
     color: var(--black);
     font-size: .9rem;
+    font-weight: 300;
+    letter-spacing: .08em;
     text-decoration: none;
+    text-transform: uppercase;
   }
   .mobile-menu nav a:hover { background: var(--paper); }
   .section-shell { padding-top: .75rem; }
