@@ -2,7 +2,7 @@
 proyecto: Óptica Best View
 paleta:
   fire-red: "#F23E02"
-  light-cream: "#FEF5C8"
+  light-cream: "#FFFDF1"
   teal-blue: "#00988D"
   dark-navy: "#013750"
   black: "#000000"
@@ -29,7 +29,7 @@ Landing editorial de moda óptica, moderna y cercana. La fotografía del cliente
 | Color | HEX | Uso principal |
 |---|---|---|
 | Fire Red | `#F23E02` | CTA principal, acentos y señales de acción |
-| Light Cream | `#FEF5C8` | Fondo cálido, superficies claras y texto sobre navy |
+| Light Cream | `#FFFDF1` | Fondo claro, superficies y texto sobre navy |
 | Teal Blue | `#00988D` | CTA secundario, interacción y tintes de sección |
 | Dark Navy | `#013750` | Secciones de alto contraste, títulos y botones oscuros |
 | Negro | `#000000` | Texto principal, sobreimpresiones y CTA sobre tonos vivos |
@@ -40,7 +40,7 @@ Las líneas y las superficies tenues se construyen con transparencias derivadas 
 ## Contraste y componentes
 - Fire Red con texto negro: **5,47:1**.
 - Teal Blue con texto negro: **5,88:1**.
-- Dark Navy con Light Cream: **11,49:1**.
+- Dark Navy con Light Cream: **12,37:1**.
 - Todo enlace de conversión se presenta como botón; el texto va en mayúsculas y sin iconos.
 - Cuando dos CTA aparecen juntos, ambos son sólidos: Fire Red y Teal Blue. El hover cambia a otro relleno sólido de la paleta; no usa tratamiento outline.
 - Las acciones individuales pueden usar Navy/Light Cream, Fire Red/negro o Teal Blue/negro según el fondo y la jerarquía.
