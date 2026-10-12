@@ -9,14 +9,14 @@ paleta:
   neutral-surface: "#FFFFFF"
   line: "rgba(1, 55, 80, 0.20)"
 tipografia:
-  titulos: Bricolage Grotesque, 400–800
+  titulos: Bricolage Grotesque, 200
   parrafos-interfaz: Roboto, 400–700
 cta:
   enlaces-de-accion: botones-solidos
   texto: mayusculas
   iconos: no
-  fondo: dark-navy
-  texto-color: "#FFFFFF"
+  fondo: "#7BBBC0"
+  texto-color: "#FFFDF1"
   borde: ninguno
   margin-top: 2.6rem
   excepcion-margin: header
@@ -45,12 +45,12 @@ Las líneas y las superficies tenues se construyen con transparencias derivadas 
 - Fire Red con texto negro: **5,47:1**.
 - Teal Blue con texto negro: **9,71:1**.
 - Dark Navy con Light Cream: **12,37:1**.
-- Todo enlace de conversión se presenta como botón sólido Navy con texto blanco, en mayúsculas y sin iconos.
+- Todo enlace de conversión se presenta como botón sólido Teal Blue (`#7BBBC0`) con texto Light Cream (`#FFFDF1`), en mayúsculas y sin iconos.
 - Los botones CTA no tienen borde y usan un margen superior de 2.6rem; el botón del encabezado queda exceptuado. El hover pasa a negro.
 - `:focus-visible` conserva un indicador claramente distinguible en fondos claros y oscuros.
 
 ## Tipografía y composición
-- **Títulos:** Bricolage Grotesque, pesos 400–800.
+- **Títulos:** Bricolage Grotesque, peso 200.
 - **Párrafos e interfaz:** Roboto, pesos 400–700.
 - Contenedor máximo de 1220 px; gutters, tamaños y espacios fluidos con `clamp()`.
 - Tarjetas de esquinas suaves, secciones respiradas y fotografías reales aportadas por el cliente.

@@ -139,7 +139,7 @@ h2,
 h3 {
   margin: 0;
   font-family: var(--display);
-  font-weight: 600;
+  font-weight: 200;
   letter-spacing: -.045em;
   line-height: 1.04;
   text-wrap: balance;
@@ -888,7 +888,7 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
   gap: 1rem;
   margin-top: clamp(1.5rem, 3vw, 2.25rem);
 }
-.hero--fullbleed .hero-actions .button { min-width: 12rem; min-height: 3.5rem; width: auto; padding: .9rem 1.35rem; border-radius: 999px; font-size: .78rem; font-weight: 700; letter-spacing: .075em; text-decoration: none; transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;}
+.hero--fullbleed .hero-actions .button { min-width: 12rem; min-height: 3.5rem; width: auto; padding: .9rem 1.35rem; border-radius: 999px; font-size: .78rem; font-weight: 700; letter-spacing: .075em; text-decoration: none; transition: background-color .2s ease, color .2s ease, transform .2s ease;}
 .hero--fullbleed .hero-actions .button--hero-primary {}
 .hero--fullbleed .hero-actions .button--hero-primary:hover {}
 .hero--fullbleed .hero-actions .button--hero-secondary {}
@@ -1159,8 +1159,8 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
 /* CTA unificados: sólidos, texto blanco y separación consistente. */
 .button {
   gap: .45rem;
-  color: var(--white);
-  background: var(--dark-navy);
+  color: var(--light-cream) !important;
+  background: var(--teal-blue);
   border: 0;
   margin-top: 2.6rem;
   text-transform: uppercase;
@@ -1168,7 +1168,7 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
 }
 .button:hover,
 .button:focus-visible {
-  color: var(--white);
+  color: var(--light-cream) !important;
   background: var(--black);
 }
 .header-cta { margin-top: 0; }
