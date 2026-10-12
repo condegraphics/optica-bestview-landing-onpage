@@ -3,7 +3,7 @@ proyecto: Óptica Best View
 paleta:
   fire-red: "#F23E02"
   light-cream: "#FFFDF1"
-  teal-blue: "#00988D"
+  teal-blue: "#7BBBC0"
   dark-navy: "#013750"
   black: "#000000"
   neutral-surface: "#FFFFFF"
@@ -15,8 +15,12 @@ cta:
   enlaces-de-accion: botones-solidos
   texto: mayusculas
   iconos: no
-  pareja-principal: [fire-red, teal-blue]
-  hover: alternancia-entre-colores-solidos-de-la-paleta
+  fondo: dark-navy
+  texto-color: "#FFFFFF"
+  borde: ninguno
+  margin-top: 2.6rem
+  excepcion-margin: header
+  hover: black
 ---
 
 # Dirección visual — Óptica Best View
@@ -28,10 +32,10 @@ Landing editorial de moda óptica, moderna y cercana. La fotografía del cliente
 
 | Color | HEX | Uso principal |
 |---|---|---|
-| Fire Red | `#F23E02` | CTA principal, acentos y señales de acción |
+| Fire Red | `#F23E02` | Acentos visuales y señales de acción |
 | Light Cream | `#FFFDF1` | Fondo claro, superficies y texto sobre navy |
-| Teal Blue | `#00988D` | CTA secundario, interacción y tintes de sección |
-| Dark Navy | `#013750` | Secciones de alto contraste, títulos y botones oscuros |
+| Teal Blue | `#7BBBC0` | Tintes de sección, acentos e interacción |
+| Dark Navy | `#013750` | Secciones de alto contraste, títulos y botones CTA |
 | Negro | `#000000` | Texto principal, sobreimpresiones y CTA sobre tonos vivos |
 | Blanco neutro | `#FFFFFF` | Uso moderado en tarjetas y superficies para separar planos |
 
@@ -39,11 +43,10 @@ Las líneas y las superficies tenues se construyen con transparencias derivadas 
 
 ## Contraste y componentes
 - Fire Red con texto negro: **5,47:1**.
-- Teal Blue con texto negro: **5,88:1**.
+- Teal Blue con texto negro: **9,71:1**.
 - Dark Navy con Light Cream: **12,37:1**.
-- Todo enlace de conversión se presenta como botón; el texto va en mayúsculas y sin iconos.
-- Cuando dos CTA aparecen juntos, ambos son sólidos: Fire Red y Teal Blue. El hover cambia a otro relleno sólido de la paleta; no usa tratamiento outline.
-- Las acciones individuales pueden usar Navy/Light Cream, Fire Red/negro o Teal Blue/negro según el fondo y la jerarquía.
+- Todo enlace de conversión se presenta como botón sólido Navy con texto blanco, en mayúsculas y sin iconos.
+- Los botones CTA no tienen borde y usan un margen superior de 2.6rem; el botón del encabezado queda exceptuado. El hover pasa a negro.
 - `:focus-visible` conserva un indicador claramente distinguible en fondos claros y oscuros.
 
 ## Tipografía y composición
