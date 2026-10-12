@@ -59,6 +59,7 @@ Las líneas y las superficies tenues se construyen con transparencias derivadas 
 ## Accesibilidad y comportamiento
 - HTML semántico, enlaces con destino explícito, controles de teclado y foco visible.
 - Menú móvil y FAQ con elementos nativos (`details`/`summary`).
+- H1 y H2 revelan desenfoque, opacidad y desplazamiento al entrar en viewport mediante CSS `view()`; fallback estático y sin animación con `prefers-reduced-motion`.
 - Estados de movimiento reducidos según `prefers-reduced-motion`.
 - Sin autoplay de video, scripts funcionales, trackers ni formularios externos.
 

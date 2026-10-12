@@ -1203,3 +1203,41 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
   outline-color: var(--light-cream);
   box-shadow: 0 0 0 2px var(--dark-navy);
 }
+
+
+/* Reveal de títulos ligado al scroll, sin JavaScript. Navegadores sin view timelines los muestran estáticos. */
+@keyframes heading-scroll-reveal {
+  from {
+    opacity: .12;
+    filter: blur(6px);
+    transform: perspective(800px) scale(.92) translateY(16px) rotateX(24deg);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: perspective(800px) scale(1) translateY(0) rotateX(0);
+  }
+}
+
+@supports (animation-timeline: view()) and (animation-range: entry 0% entry 100%) {
+  h1,
+  h2 {
+    animation-name: heading-scroll-reveal;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 25%;
+    transform-origin: 50% 70%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  h1,
+  h2 {
+    animation: none !important;
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+}
