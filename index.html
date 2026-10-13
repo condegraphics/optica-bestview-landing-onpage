@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="img/optica-bestview-belgrano-nuniez-002.jpg" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css?v=audit-2026">
+  <link rel="stylesheet" href="styles.css?v=contact-wa-2026">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
@@ -390,38 +390,137 @@
     </section>
 
     <section class="contact section-space" id="ubicacion" aria-labelledby="contact-title">
-      <div class="container contact-card">
-        <div class="contact-copy">
-          <p class="eyebrow eyebrow--light">Núñez · Belgrano · CABA</p>
-          <h2 id="contact-title">Nos encontramos en Av. Cabildo.</h2>
-          <p>Acercate a Óptica Best View o escribinos antes para coordinar tu consulta.</p>
-          <a class="button button--light" href="https://maps.app.goo.gl/F3nq86VnmmtKpuAVA" target="_blank" rel="noopener noreferrer">VER CÓMO LLEGAR</a>
-        </div>
-        <address class="contact-details">
-          <div class="contact-item">
-            <span class="contact-label">Dirección</span>
-            <span>Av. Cabildo 3038<br>CP 1429 · CABA</span>
+      <div class="container">
+
+        <div class="contact-layout">
+
+          <!-- Columna izquierda: datos + mapa -->
+          <div class="contact-info">
+            <p class="eyebrow">Núñez · Belgrano · CABA</p>
+            <h2 id="contact-title">Vení a vernos o escribinos antes.</h2>
+            <p class="contact-info__desc">Estamos en Av. Cabildo 3038. Si preferís, coordina tu visita por WhatsApp y te orientamos antes de acercarte.</p>
+
+            <address class="contact-meta">
+              <dl class="contact-dl">
+                <div class="contact-dl__row">
+                  <dt>Dirección</dt>
+                  <dd>Av. Cabildo 3038, CP 1429 · CABA</dd>
+                </div>
+                <div class="contact-dl__row">
+                  <dt>Horario</dt>
+                  <dd>Lunes a viernes · 10:30 a 19:30</dd>
+                </div>
+                <div class="contact-dl__row">
+                  <dt>Teléfono</dt>
+                  <dd><a href="tel:+541145440814">11 4544-0814</a></dd>
+                </div>
+                <div class="contact-dl__row">
+                  <dt>WhatsApp</dt>
+                  <dd><a href="https://wa.me/5491126132593" target="_blank" rel="noopener noreferrer">11 2613-2593</a></dd>
+                </div>
+                <div class="contact-dl__row">
+                  <dt>Email</dt>
+                  <dd><a href="mailto:opticabestview@gmail.com">opticabestview@gmail.com</a></dd>
+                </div>
+              </dl>
+            </address>
+
+            <a class="button button--dark contact-map-btn" href="https://maps.app.goo.gl/F3nq86VnmmtKpuAVA" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              VER CÓMO LLEGAR
+            </a>
           </div>
-          <div class="contact-item">
-            <span class="contact-label">Horario</span>
-            <span>Lunes a viernes<br>10:30 a 19:30</span>
+
+          <!-- Columna derecha: formulario WhatsApp -->
+          <div class="contact-form-wrap">
+            <div class="contact-form-card">
+              <p class="eyebrow">Escribinos directamente</p>
+              <p class="contact-form__subtitle">Completá el formulario y te enviamos los datos listos en WhatsApp.</p>
+
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row form-row--half">
+                  <div class="form-field">
+                    <label for="cf-nombre">Tu nombre</label>
+                    <input type="text" id="cf-nombre" name="nombre" placeholder="Ej. María García" autocomplete="given-name" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="cf-telefono">Teléfono (opcional)</label>
+                    <input type="tel" id="cf-telefono" name="telefono" placeholder="Ej. 11 5555-1234" autocomplete="tel">
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="cf-asunto">Asunto</label>
+                  <div class="form-select-wrap">
+                    <select id="cf-asunto" name="asunto" required>
+                      <option value="" disabled selected>Seleccioná una opción</option>
+                      <option value="Consulta por anteojos y armazones">Anteojos y armazones</option>
+                      <option value="Consulta por cristales">Cristales</option>
+                      <option value="Consulta por lentes de contacto">Lentes de contacto</option>
+                      <option value="Consulta por estudios visuales y turno">Estudio visual y turno</option>
+                      <option value="Consulta por ajuste o reparación">Ajuste o reparación</option>
+                      <option value="Consulta por obra social o prepaga">Obra social o prepaga</option>
+                      <option value="Consulta por promociones y beneficios">Promociones y beneficios</option>
+                      <option value="Consulta general">Consulta general</option>
+                    </select>
+                    <svg class="form-select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="cf-mensaje">Mensaje</label>
+                  <textarea id="cf-mensaje" name="mensaje" rows="4" placeholder="Contanos brevemente qué necesitás..." required></textarea>
+                </div>
+
+                <p class="form-notice">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  Al enviar se abrirá WhatsApp con tu consulta lista para completar y enviar.
+                </p>
+
+                <button type="submit" class="button button--wa">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.551 4.107 1.517 5.838L.057 23.25l5.563-1.459A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 01-4.992-1.368l-.357-.213-3.302.868.882-3.228-.232-.373A9.786 9.786 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+                  ENVIAR POR WHATSAPP
+                </button>
+              </form>
+            </div>
           </div>
-          <div class="contact-item">
-            <span class="contact-label">Llamanos</span>
-            <a class="button button--small button--light" href="tel:+541145440814">LLAMAR · 11 4544-0814</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Escribinos</span>
-            <a class="button button--small button--teal" href="https://wa.me/5491126132593" target="_blank" rel="noopener noreferrer">WHATSAPP · 11 2613-2593</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Email</span>
-            <a class="button button--small button--red" href="mailto:opticabestview@gmail.com">ENVIAR EMAIL</a>
-          </div>
-        </address>
+
+        </div><!-- /.contact-layout -->
       </div>
     </section>
   </main>
+
+  <!-- ── Botón flotante WhatsApp ──────────────────────────────── -->
+  <a class="wa-float"
+     href="https://wa.me/5491126132593?text=Hola%2C%20vengo%20desde%20la%20web%20de%20%C3%93ptica%20Best%20View.%20Quiero%20hacer%20una%20consulta."
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Consultar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.551 4.107 1.517 5.838L.057 23.25l5.563-1.459A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 01-4.992-1.368l-.357-.213-3.302.868.882-3.228-.232-.373A9.786 9.786 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+    <span class="wa-float__tooltip">¿Hablamos?</span>
+  </a>
+
+  <!-- ── Script formulario → WhatsApp (~15 líneas, sin librerías) -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nombre   = this.nombre.value.trim();
+      const telefono = this.telefono.value.trim();
+      const asunto   = this.asunto.value;
+      const mensaje  = this.mensaje.value.trim();
+      if (!nombre || !asunto || !mensaje) return;
+      const lineas = [
+        'Hola, vengo desde la web de Óptica Best View.',
+        '',
+        `*Nombre:* ${nombre}`,
+        telefono ? `*Teléfono:* ${telefono}` : null,
+        `*Asunto:* ${asunto}`,
+        '',
+        `*Mensaje:* ${mensaje}`
+      ].filter(l => l !== null).join('\n');
+      window.open('https://wa.me/5491126132593?text=' + encodeURIComponent(lineas), '_blank', 'noopener,noreferrer');
+    });
+  </script>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
