@@ -12,6 +12,7 @@
   --white: #fff;
   --line: rgba(1, 55, 80, .2);
   --display: "Bricolage Grotesque", "Arial Rounded MT Bold", sans-serif;
+  --heading: "Manrope", Arial, sans-serif;
   --body: "Roboto", Arial, sans-serif;
   --page-width: 1342px;
   --gutter: clamp(1.15rem, 4vw, 2.75rem);
@@ -144,9 +145,9 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-family: var(--display);
-  font-weight: 200;
-  letter-spacing: .012em;
+  font-family: var(--heading);
+  font-weight: 500;
+  letter-spacing: -4.3px;
   line-height: 1.04;
   text-wrap: balance;
 }
