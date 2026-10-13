@@ -937,7 +937,7 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 }
 
 /* ── 20. CONTACTO ──────────────────────────────────────────── */
-.contact { background: var(--paper); }
+.contact { background: #EFF4EA; }
 
 /* Layout de 2 columnas */
 .contact-layout {
@@ -1009,10 +1009,8 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 /* — Columna derecha: formulario ─── */
 .contact-form-card {
   padding: clamp(1.75rem, 3.5vw, 2.75rem);
-  border: 1px solid var(--line);
   border-radius: 1.5rem;
   background: var(--white);
-  box-shadow: 0 8px 40px rgba(1,55,80,.07);
 }
 
 .contact-form__subtitle {
@@ -1052,14 +1050,14 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 .form-field textarea {
   width: 100%;
   padding: .8rem 1rem;
-  border: 1.5px solid var(--line);
+  border: none;
   border-radius: .75rem;
   color: var(--dark-navy);
-  background: var(--paper);
+  background: #EFF4EA;
   font-family: var(--font-body);
   font-size: .96rem;
   line-height: 1.5;
-  transition: border-color .18s ease, box-shadow .18s ease;
+  transition: box-shadow .18s ease;
   appearance: none;
 }
 .form-field input::placeholder,
@@ -1067,13 +1065,11 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
-  border-color: var(--teal-blue);
-  box-shadow: 0 0 0 3px rgba(123,187,192,.18);
+  box-shadow: 0 0 0 2px var(--teal-blue);
 }
 .form-field input:user-invalid,
 .form-field textarea:user-invalid {
-  border-color: var(--fire-red);
-  box-shadow: 0 0 0 3px rgba(242,62,2,.11);
+  box-shadow: 0 0 0 2px var(--fire-red);
 }
 .form-field textarea {
   min-height: 8rem;
@@ -1088,24 +1084,23 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 .form-select-wrap select {
   width: 100%;
   padding: .8rem 2.8rem .8rem 1rem;
-  border: 1.5px solid var(--line);
+  border: none;
   border-radius: .75rem;
   color: var(--dark-navy);
-  background: var(--paper);
+  background: #EFF4EA;
   font-family: var(--font-body);
   font-size: .96rem;
   line-height: 1.5;
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
-  transition: border-color .18s ease, box-shadow .18s ease;
+  transition: box-shadow .18s ease;
 }
 .form-select-wrap select:focus {
   outline: none;
-  border-color: var(--teal-blue);
-  box-shadow: 0 0 0 3px rgba(123,187,192,.18);
+  box-shadow: 0 0 0 2px var(--teal-blue);
 }
-.form-select-wrap select:user-invalid { border-color: var(--fire-red); }
+.form-select-wrap select:user-invalid { box-shadow: 0 0 0 2px var(--fire-red); }
 .form-select-arrow {
   position: absolute;
   right: 1rem;
