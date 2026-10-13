@@ -1276,7 +1276,8 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
 .logo-carousel__track {
   display: flex;
   width: max-content;
-  animation: logo-carousel-scroll 48s linear infinite;
+  animation: logo-carousel-scroll 24s linear infinite;
+  animation-play-state: running;
   will-change: transform;
 }
 .logo-carousel__set {
@@ -1300,18 +1301,16 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
   opacity: 1;
   transform: translateY(-2px);
 }
-.logo-carousel:hover .logo-carousel__track,
-.logo-carousel:focus-within .logo-carousel__track { animation-play-state: paused; }
 @keyframes logo-carousel-scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .logo-carousel__track { animation: none; }
+  .logo-carousel__track { animation-duration: 72s; }
   .logo-carousel__set img { transition: none; }
 }
 @media (max-width: 700px) {
   .brands-logos { margin-top: 2.25rem; }
-  .logo-carousel__track { animation-duration: 38s; }
+  .logo-carousel__track { animation-duration: 20s; }
   .logo-carousel__set { gap: 1rem; }
 }
