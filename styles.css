@@ -1260,3 +1260,58 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
   h1 { font-size: 65px !important; }
   h2 { font-size: 46px !important; }
 }
+
+/* Infinite brand logo carousel */
+.brands-logos {
+  margin-top: clamp(2.5rem, 5vw, 4.5rem);
+  overflow: hidden;
+}
+.logo-carousel {
+  position: relative;
+  overflow: hidden;
+  padding-block: .55rem;
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.logo-carousel__track {
+  display: flex;
+  width: max-content;
+  animation: logo-carousel-scroll 48s linear infinite;
+  will-change: transform;
+}
+.logo-carousel__set {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 3rem);
+  padding-inline: clamp(.75rem, 2vw, 1.5rem);
+}
+.logo-carousel__set img {
+  width: clamp(7rem, 11vw, 10rem);
+  height: clamp(4rem, 7vw, 6rem);
+  flex: 0 0 auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  filter: grayscale(1);
+  opacity: .62;
+  transition: filter .3s ease, opacity .3s ease, transform .3s ease;
+}
+.logo-carousel__set img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.logo-carousel:hover .logo-carousel__track,
+.logo-carousel:focus-within .logo-carousel__track { animation-play-state: paused; }
+@keyframes logo-carousel-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-carousel__track { animation: none; }
+  .logo-carousel__set img { transition: none; }
+}
+@media (max-width: 700px) {
+  .brands-logos { margin-top: 2.25rem; }
+  .logo-carousel__track { animation-duration: 38s; }
+  .logo-carousel__set { gap: 1rem; }
+}
