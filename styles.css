@@ -346,10 +346,10 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
 }
 
 .services { background: var(--paper); }
-.section-heading--center { max-width: 49rem; margin-inline: auto; text-align: center; }
+.section-heading--center { max-width: 83.3rem; margin-inline: auto; text-align: center; }
 .section-heading--center .eyebrow { justify-content: center; }
-.section-heading--center h2 { max-width: 24ch; margin-inline: auto; }
-.section-heading--center > p:not(.eyebrow) { margin: 1rem auto 0; }
+.section-heading--center h2 { max-width: 100%; margin-inline: auto; }
+.section-heading--center > p:not(.eyebrow) { max-width: 100%; margin: 1rem auto 0; }
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -442,10 +442,10 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
   justify-content: space-between;
   gap: 2.5rem;
 }
-.consultation-inner > div { max-width: 52rem; }
-.consultation h2 { max-width: 19ch; font-size: clamp(2rem, 3.8vw, 3.25rem); }
+.consultation-inner > div { max-width: 88.4rem; }
+.consultation h2 { max-width: 100%; font-size: clamp(2rem, 3.8vw, 3.25rem); }
 .consultation-inner > div > p:not(.eyebrow) {
-  max-width: 62ch;
+  max-width: 100%;
   margin-top: 1rem;
   color: rgba(255, 253, 241, .8);
 }
@@ -767,10 +767,10 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
   bottom: clamp(2.5rem, 6vw, 5.5rem);
   color: var(--white);
 }
-.editorial-copy { max-width: 38rem; }
+.editorial-copy { max-width: 64.6rem; }
 .editorial-copy h2 { max-width: 18ch; font-size: clamp(2.6rem, 5.4vw, 5rem); }
 .editorial-copy > p:not(.eyebrow) {
-  max-width: 43ch;
+  max-width: 100%;
   margin-top: 1rem;
   color: rgba(255, 253, 241, .9);
   font-size: clamp(1rem, 1.2vw, 1.12rem);
