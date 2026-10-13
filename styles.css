@@ -112,7 +112,7 @@ h3 {
   text-wrap: balance;
 }
 h1 { font-size: clamp(2.6rem, 5.8vw, 4.1rem); max-width: 13ch; }
-h2 { font-size: clamp(2.15rem, 4vw,  2.875rem); max-width: 17ch; }
+h2 { font-size: clamp(2.15rem, 4vw,  2.875rem); }
 h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 
 @media (min-width: 901px) {
@@ -423,7 +423,6 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 }
 
 .identity-copy > p:not(.eyebrow) {
-  max-width: 56ch;
   margin-top: 1.1rem;
   color: var(--dark-navy);
   font-size: .98rem;
@@ -442,7 +441,6 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 }
 .variety-copy h2      { max-width: 20ch; }
 .variety-copy > p:not(.eyebrow) {
-  max-width: 56ch;
   margin-top: 1.4rem;
   color: var(--dark-navy);
   font-size: 1.02rem;
@@ -586,7 +584,6 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 }
 
 .brands-copy > p:not(.eyebrow) {
-  max-width: 62ch;
   margin-top: 1.1rem;
   color: var(--dark-navy);
   font-size: .98rem;
@@ -683,7 +680,6 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 }
 .study-copy h2 { max-width: 20ch; }
 .study-copy > p:not(.eyebrow) {
-  max-width: 56ch;
   margin-top: 1.25rem;
   color: var(--dark-navy);
   font-size: 1.02rem;
@@ -728,9 +724,8 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
   gap: clamp(2rem, 6vw, 5.5rem);
 }
 
-.benefits-copy h2 { max-width: 28ch; }
+.benefits-copy h2 { max-width: 100%; }
 .benefits-copy > p:not(.eyebrow) {
-  max-width: 52ch;
   margin-top: 1.1rem;
   color: var(--dark-navy);
   font-size: .98rem;
@@ -828,7 +823,6 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
   gap: clamp(2rem, 6vw, 5.5rem);
 }
 .coverage-copy > p:not(.eyebrow) {
-  max-width: 62ch;
   margin-top: 1.1rem;
   color: var(--dark-navy);
   font-size: .98rem;
@@ -897,7 +891,6 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 }
 .faq-grid .section-heading > p:not(.eyebrow) {
   margin-top: 1rem;
-  max-width: 56ch;
   color: var(--dark-navy);
   font-size: 1.02rem;
   line-height: 1.8;
