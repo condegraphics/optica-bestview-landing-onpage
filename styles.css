@@ -306,7 +306,7 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
 
 .variety { background: rgba(123, 187, 192, .12); }
 .variety-grid { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
-.variety-copy h2 { max-width: 13ch; }
+.variety-copy h2 { max-width: 20ch; }
 .variety-copy > p:not(.eyebrow) { margin-top: 1.4rem; }
 .variety-copy .button {}
 .microcopy { margin-top: .8rem; color: var(--muted); font-size: .8rem; }
@@ -348,7 +348,7 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
 .services { background: var(--paper); }
 .section-heading--center { max-width: 49rem; margin-inline: auto; text-align: center; }
 .section-heading--center .eyebrow { justify-content: center; }
-.section-heading--center h2 { max-width: 19ch; margin-inline: auto; }
+.section-heading--center h2 { max-width: 24ch; margin-inline: auto; }
 .section-heading--center > p:not(.eyebrow) { margin: 1rem auto 0; }
 .service-grid {
   display: grid;
@@ -403,7 +403,7 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
 
 .visual-study { background: rgba(123, 187, 192, .1); }
 .study-grid { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); }
-.study-copy h2 { max-width: 13ch; }
+.study-copy h2 { max-width: 20ch; }
 .study-copy > p:not(.eyebrow) { margin-top: 1.25rem; }
 .study-copy .medical-note {
   padding-left: 1rem;
@@ -768,7 +768,7 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
   color: var(--white);
 }
 .editorial-copy { max-width: 38rem; }
-.editorial-copy h2 { max-width: 13ch; font-size: clamp(2.6rem, 5.4vw, 5rem); }
+.editorial-copy h2 { max-width: 18ch; font-size: clamp(2.6rem, 5.4vw, 5rem); }
 .editorial-copy > p:not(.eyebrow) {
   max-width: 43ch;
   margin-top: 1rem;
@@ -811,7 +811,7 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
   .editorial-figure > img { object-position: center 57%; }
   .editorial-caption { bottom: 1.5rem; }
   .editorial-copy { max-width: 33rem; }
-  .editorial-copy h2 { max-width: 11ch; font-size: clamp(2.35rem, 10vw, 3.5rem); }
+  .editorial-copy h2 { max-width: 100%; font-size: clamp(2.35rem, 10vw, 3.5rem); }
   .editorial-copy > p:not(.eyebrow) { max-width: 35ch; font-size: .95rem; }
   .service-card { --card-pad: 1.35rem; }
   .service-card__visual { aspect-ratio: 1.85 / 1; margin-block-end: 1rem; }
@@ -968,7 +968,7 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
 .brands-copy h2,
 .benefits-copy h2,
 .coverage-copy h2 {
-  max-width: 16ch;
+  max-width: 22ch;
   font-size: clamp(2.25rem, 4.1vw, 4rem);
   line-height: 1.04;
 }
@@ -1126,7 +1126,10 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.7rem); }
   .identity-copy h2,
   .brands-copy h2,
   .benefits-copy h2,
-  .coverage-copy h2 { max-width: 15ch; font-size: clamp(2rem, 8.5vw, 3rem); }
+  .coverage-copy h2,
+  .variety-copy h2,
+  .study-copy h2,
+  .section-heading--center h2 { max-width: 100%; font-size: clamp(2rem, 8.5vw, 3rem); }
   .identity-copy > p:not(.eyebrow),
   .brands-copy > p:not(.eyebrow),
   .benefits-copy > p:not(.eyebrow),
