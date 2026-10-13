@@ -430,8 +430,8 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 }
 .identity-copy .button { margin-top: 2rem; }
 
-/* ── 12. VARIEDAD (ANTEOJOS) ───────────────────────────────── */
-.variety { background: rgba(123,187,192,.12); }
+/* ── 12. VARIEDAD + MARCAS (fusionadas) ───────────────────── */
+.variety { background: var(--white); }
 
 .variety-grid {
   display: grid;
@@ -626,7 +626,8 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 .brand-photo--bottom img  { object-position: center 24%; }
 
 /* Carrusel de logos */
-.brands-logos {
+.brands-logos,
+.variety-logos {
   margin-top: clamp(2.5rem, 5vw, 4.5rem);
   overflow: hidden;
 }
@@ -1467,7 +1468,8 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 
   .brands-gallery              { min-height: 24rem; grid-template-rows: minmax(0, 1.15fr) minmax(0, .85fr); gap: .55rem; }
   .brand-photo                 { border-radius: .8rem; }
-  .brands-logos                { margin-top: 2.25rem; }
+  .brands-logos,
+  .variety-logos               { margin-top: 2.25rem; }
   .logo-carousel__track        { animation-duration: 20s; }
   .logo-carousel__set          { gap: 1rem; }
 
