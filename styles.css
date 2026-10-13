@@ -937,7 +937,164 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
   line-height: 1.75;
 }
 
-/* ── 20. CONTACTO ──────────────────────────────────────────── */
+/* ── 20. RESEÑAS GOOGLE ─────────────────────────────────────── */
+.reviews { background: var(--light-cream); }
+
+/* Header del bloque: logo G + score aggregate + heading */
+.reviews-header {
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+.reviews-header__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.reviews-google-logo { flex-shrink: 0; }
+.reviews-header__score {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+.reviews-score {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--dark-navy);
+  letter-spacing: -.02em;
+}
+.reviews-stars {
+  color: #FBBC05;
+  font-size: 1.15rem;
+  line-height: 1;
+  letter-spacing: .05em;
+}
+.reviews-count {
+  font-size: .82rem;
+  color: var(--muted);
+  letter-spacing: .04em;
+}
+.reviews-header h2 {
+  margin: 0;
+  max-width: 24ch;
+}
+
+/* Grid de cards */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Card individual */
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: clamp(1.35rem, 2.5vw, 1.75rem);
+  border-radius: 1.1rem;
+  background: var(--white);
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+.review-card:hover {
+  box-shadow: 0 8px 32px rgba(1, 55, 80, .09);
+  transform: translateY(-2px);
+}
+
+/* Header de la card: avatar + nombre + estrellas */
+.review-card__header {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+}
+.review-card__avatar {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background: var(--teal-blue);
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+.review-card__name {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: .93rem;
+  font-weight: 600;
+  color: var(--dark-navy);
+  line-height: 1.3;
+}
+.review-card__stars {
+  color: #FBBC05;
+  font-size: .92rem;
+  line-height: 1;
+  letter-spacing: .06em;
+  margin-top: .18rem;
+}
+
+/* Texto de la reseña */
+.review-card__text {
+  margin: 0;
+  flex-grow: 1;
+}
+.review-card__text p {
+  margin: 0;
+  font-size: .93rem;
+  line-height: 1.72;
+  color: var(--muted);
+}
+
+/* Footer: logo G + "Publicado en Google" */
+.review-card__footer {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  padding-top: .75rem;
+  border-top: 1px solid var(--line);
+  font-size: .78rem;
+  color: var(--muted);
+  letter-spacing: .03em;
+}
+
+/* CTA "Ver todas" */
+.reviews-cta {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+}
+
+/* Botón outline (nuevo variant) */
+.button--outline {
+  background: transparent;
+  color: var(--dark-navy);
+  border: 1.5px solid rgba(1, 55, 80, .30);
+  font-size: .78rem;
+  letter-spacing: .1em;
+  padding: .75rem 1.75rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-family: var(--font-head);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: border-color .18s ease, background .18s ease, color .18s ease;
+}
+.button--outline:hover {
+  border-color: var(--dark-navy);
+  background: var(--dark-navy);
+  color: #fff;
+}
+
+/* ── 21. CONTACTO ──────────────────────────────────────────── */
 .contact { background: #EFF4EA; }
 
 /* Layout de 2 columnas */
@@ -1485,6 +1642,9 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
   .faq-grid                    { gap: 1.4rem; }
   .faq-list summary            { min-height: 4rem; font-size: 1rem; }
   .faq-list details p          { padding-right: .25rem; font-size: .91rem; }
+
+  .reviews-grid                { grid-template-columns: 1fr; }
+  .reviews-header h2           { font-size: clamp(1.75rem, 7vw, 2.4rem); }
 
   .contact-layout              { grid-template-columns: 1fr; gap: 2.5rem; }
   .contact-form-card           { padding: 1.5rem; }
