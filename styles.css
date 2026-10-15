@@ -1394,6 +1394,18 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
   color: var(--muted);
   font-size: .77rem;
 }
+.footer-credit { text-transform: uppercase; }
+.footer-credit a {
+  color: var(--dark-navy);
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer-credit a:hover { opacity: .7; }
+.footer-credit a:focus-visible {
+  border-radius: .15rem;
+  outline: 2px solid var(--dark-navy);
+  outline-offset: 3px;
+}
 
 /* ── 22. ANIMACIÓN SCROLL (sin JS) ────────────────────────── */
 @keyframes heading-reveal {
