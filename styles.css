@@ -316,6 +316,7 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
   z-index: 1;
   align-self: end;
   padding-block: clamp(3rem, 7vw, 5.5rem);
+  transform: translateY(-15svh);
 }
 .hero--fullbleed .hero-copy h1 {
   max-width: 19ch;
