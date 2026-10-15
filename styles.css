@@ -487,7 +487,7 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
 }
 
 /* ── 13. SERVICIOS ─────────────────────────────────────────── */
-.services { background: var(--paper); }
+.services { background: var(--white); }
 
 .section-heading--center {
   max-width: 83.3rem;
@@ -518,13 +518,13 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
   flex-direction: column;
   align-items: flex-start;
   padding: var(--card-pad);
-  border: 1px solid var(--line);
-  border-radius: 1.2rem;
-  background: var(--white);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 .service-card--featured {
-  border-color: rgba(123,187,192,.4);
-  background: rgba(123,187,192,.12);
+  background: transparent;
 }
 
 /* Imagen de la tarjeta de servicio */
@@ -550,7 +550,6 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
   display: grid;
   place-items: center;
   margin-bottom: 2.2rem;
-  border: 1px solid rgba(1,55,80,.18);
   border-radius: 50%;
   color: var(--dark-navy);
   font-size: .86rem;
