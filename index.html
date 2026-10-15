@@ -600,6 +600,21 @@
 
   <!-- ── Script formulario → WhatsApp (~15 líneas, sin librerías) -->
   <script>
+    const editorialTitle = document.querySelector('.editorial-copy h2');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (editorialTitle && window.matchMedia('(max-width: 700px)').matches &&
+        'IntersectionObserver' in window && !prefersReducedMotion.matches) {
+      editorialTitle.classList.add('is-reveal-pending');
+      const titleObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.remove('is-reveal-pending');
+          titleObserver.unobserve(entry.target);
+        });
+      }, { threshold: 0.2 });
+      titleObserver.observe(editorialTitle);
+    }
+
     document.getElementById('contactForm').addEventListener('submit', function (e) {
       e.preventDefault();
       const nombre   = this.nombre.value.trim();

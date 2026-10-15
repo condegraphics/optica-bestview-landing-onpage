@@ -1601,6 +1601,19 @@ h3 { font-size: clamp(1.35rem, 2vw,  1.7rem); }
   .editorial-copy           { max-width: 33rem; }
   .editorial-copy h2        { max-width: 100%; font-size: clamp(2.35rem, 10vw, 3.5rem); }
   .editorial-copy > p:not(.eyebrow) { display: none; }
+  h1,
+  h2 {
+    animation: none;
+    animation-timeline: auto;
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+  .editorial-copy h2 { transition: opacity .35s ease-out, transform .35s ease-out; }
+  .editorial-copy h2.is-reveal-pending {
+    opacity: .72;
+    transform: translateY(.6rem);
+  }
 
   /* Grillas a una columna */
   .identity-grid,
